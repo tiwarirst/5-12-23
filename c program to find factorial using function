@@ -1,0 +1,21 @@
+#include <stdio.h>
+int fan(int n)
+{
+    int j=1;
+    if(n==0)
+   return 1;
+    else
+    for(int k=n;k>=1;k--)
+    j=j*k;
+    return j;
+    
+}
+int main()
+{
+    int n,p;
+    printf("enter the no:");
+    scanf("%d",&n);
+   p= fan(n);
+   printf("factorial is:%d",p);
+    return 0;
+}
